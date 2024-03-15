@@ -34,9 +34,10 @@ body {
 }
 
 .caixa {
-    width: 360px;
-
+    width: 100%;
+    max-width: 588px;
     margin: 56px auto 0px;
+    padding: 0 24px;
 }
 
 #profile {
@@ -74,6 +75,11 @@ body {
     left: 0;
     z-index: 1;
     transform: translateY(-50%);
+    animation: slide-out 0.2s;
+}
+
+#switch button:hover {
+    outline: 8px solid var(--highlight-color);
 }
 
 #switch span {
@@ -87,8 +93,7 @@ body {
 }
 
 .light #switch button {
-    right: -4px;
-    left: initial;
+    animation: slide-in 0.2s forwards;
 }
 
 ul {
@@ -143,4 +148,37 @@ ul li a:hover {
 footer {
     text-align: center;
     padding: 24px 0;
+}
+
+/* não consegui terminar essa parte */
+
+/*
+@media (min-width: 700px) { 
+    :root {
+        --bg-url: url(./assets/assets/bg-desktop.jpg);
+    }
+
+    .light {
+        --bg-url: url(./assets/assets/bg-desktop-light.jpg);
+    }
+}
+*/
+
+@keyframes slide-in {
+    from {
+        left: 0;
+    }
+
+    to {
+        left: 55%;
+    }
+}
+
+@keyframes slide-out {
+    from {
+        left: 55%;
+    }
+    to {
+        left: 0;
+    }
 }
