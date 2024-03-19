@@ -150,6 +150,16 @@ footer {
     padding: 24px 0;
 }
 
+@media (max-width: 700px) {
+    body {
+        background-image: url(bg-mobile.jpg) !important;
+    }
+
+    .light {
+        background-image: url(bg-mobile-light.jpg) !important;
+    }
+}
+
 @keyframes slide-in {
     from {
         left: 0;
