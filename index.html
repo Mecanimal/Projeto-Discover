@@ -1,10 +1,23 @@
 <!DOCTYPE html>
 
 <html lang="en" class="">
+
+<!--
+    Creio que a aula sobre media query esteja desatualizada, 
+    ou o vídeo apenas não explica tão bem pois eu não consegui 
+    faze-la funcionar. para fazer o background mudar com o 
+    tamanho da tela sem fazer uso de media query eu criei dois 
+    aquivos de estilos que alternam entre si de acordo com a 
+    largura da janela. O código que eu fiz funciona mas não é tão 
+    otimizado. Seria bom saber como é possível fazer a mudança de 
+    backgrounds do jeito 'certo'.
+-->
     
 <head>
-    <link rel="stylesheet" media="(min-width: 700px)" type="text/css" href="Estilo.css">
-    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0" /> -->
+    <link rel="stylesheet" media="screen and (min-width: 700px)" type="text/css" href="Estilo.css">
+    <link rel="stylesheet" media="screen and (max-width: 699px)" href="Estilo2.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>
         Document
